@@ -28,7 +28,7 @@ class TinderBot():
         else:
             more_options_btn=driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/span/button')
             more_options_btn.click()
-            time.sleep(10)
+            time.sleep(15)
             fb_btn=driver.find_element_by_xpath('//span[text()="Log in with Facebook"]')
             fb_btn.click()
    
@@ -71,7 +71,7 @@ class TinderBot():
 
     def auto_swipe(self):
         while True:
-            time.sleep(2)
+            time.sleep(3)
             try:
                 self.like()
             except Exception:
